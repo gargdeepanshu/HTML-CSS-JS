@@ -1,0 +1,38 @@
+.heading{
+    align-self: center;
+}
+
+
+.search-container {
+    float: right;
+  }
+
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px solid #4d4d4d;
+}
+  
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #4d4d4d;
+  }
+
+
+  
+  @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+    }
+}
+ 
