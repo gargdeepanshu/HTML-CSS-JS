@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/insert.css">
+  <link rel="stylesheet" href="css/w3.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body class="w3-pale-green">
+
+    <div class="w3-top">
+        <ul class="w3-navbar w3-medium w3-white w3-card-2 w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+                <a href="javascript:void(0);" onclick="menu()" class="w3-white">☰</a>
+            </li>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="#">Insert Student</a>
+            </li>
+           
+            <li class="w3-hide-small">
+                <a href="delete.html">Delete Student</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="search.html">Search Student</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="login.html">Login</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="about.html">About us</a>
+            </li>
+        </ul>
+
+        <div id="fullNav" class="w3-hide w3-card-2 w3-hide-large w3-hide-medium">
+
+            <ul class="w3-navbar w3-left-align w3-medium w3-white">
+                <li>
+                    <a href="#">Insert Student</a>
+                </li>
+               
+                <li>
+                    <a href="delete.html">Delete Student</a>
+                </li>
+                <li>
+                    <a href="search.html">Search Student</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+    <div class="w3-container x w3-animate-left">
+
+        <div class="w3-card-2 w3-white">
+            <div class="w3-container w3-blue">
+                <h4>Enter the details of the student to insert.</h4>
+            </div>
+            
+                <form class="w3-container w3-padding">
+                    <label class="inputtext">Full Name</label><br>
+                    <input class="fname" id="fname" type="text" required><br>
+
+                    <br><label class="inputtext">Roll No.</label><br>
+                    <input class="lname" id="roll" type="text" required><br>
+
+                    <br><label class="inputtext">Phone Number</label><br>
+                    <input class="mail" id="mail" type="number"  required><br>
+
+                    <br><label class="inputtext">E-mail Id</label><br>
+                    <input class="phone" id="phone" type="email" required><br>
+
+                    <br><label class="inputtext">Course</label><br>
+                    <select style="width: 150px" id="course">
+                        <option>BCA</option>
+                        <option>MCA</option>
+                        <option>B.A</option>
+                        <option>M.A</option>
+                        <option>B.Sc</option>
+                        <option>B.Com</option>
+                        <option>BBA</option>    
+                    </select>
+                    
+
+                    <input class="w3-btn w3-blue subtn" type="submit" value="INSERT" onclick="insert()">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script>  //-- Navigation bar script
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        function insert(){
+            var fn,rl,ph,ma,cr;
+            fn = document.getElementById('fname').value;
+            rl = document.getElementById('roll').value;
+            ph = document.getElementById('phone').value;
+            ma = document.getElementById('mail').value;
+            cr = document.getElementById('course').value;
+            alert("Name:-" + fn + "\n" + "Roll No. :- " + rl + "\n" + "Phone No. :- " + ph + "\n" + "E-mail :-" + ma + "\n" + "Course:- " + cr);
+        }
+
+    </script>
+
+</body>
+
+</html>
