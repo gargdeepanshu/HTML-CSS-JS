@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script type="text/javascript">
+        function menu() {
+    var x = document.getElementById("fullNav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body class="w3-khaki">
+
+    <div class="w3-top">
+        <ul class="w3-navbar w3-medium w3-white w3-card-2 w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+                <a href="javascript:void(0);" onclick="menu()" class="w3-white">☰</a>
+            </li>
+             <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="insert.html">Insert Student</a>
+            </li>
+            
+            <li class="w3-hide-small">
+                <a href="delete.html">Delete Student</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="search.html">Search Student</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="#">Contact Us</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="login.html">Login</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="about.html">About us</a>
+            </li>            
+        </ul>
+
+        <div id="fullNav" class="w3-hide w3-card-2 w3-hide-large w3-hide-medium">
+
+            <ul class="w3-navbar w3-left-align w3-medium w3-white">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li >
+                <a href="insert.html">Insert Student</a>
+            </li>
+           
+            <li >
+                <a href="delete.html">Delete Student</a>
+            </li>
+            <li >
+                <a href="search.html">Search Student</a>
+            </li>
+            <li >
+                <a href="#">Contact Us</a>
+            </li>
+            <li >
+                <a href="login.html">Login</a>
+            </li> 
+            <li >
+                <a href="about.html">About us</a>
+            </li>             
+            </ul>
+        </div>
+
+    </div>
+    <br>
+    <br>   <!-- Navigation bar ending-->  
+
+
+    <div class="w3-container x w3-animate-top">
+
+        <div class="w3-card-2 w3-white">
+            <div class="w3-container w3-blue">
+                <h3>Contact us</h3>
+            </div>
+            
+                <form class="w3-container w3-padding">
+                    <label class="inputtext">First Name</label><br>
+                    <input class="fname" type="text" required><br>
+
+                    <br><label class="inputtext">Last Name</label><br>
+                    <input class="lname" type="text" required><br>
+
+                    <br><label class="inputtext">E-mail Id</label><br>
+                    <input class="mail" type="email" required><br>
+
+                    <br><label class="inputtext">Phone Number</label><br>
+                    <input class="phone" type="number" maxlength="10" required><br>
+
+                    <br><label class="inputtext">Message</label><br>
+                    <textarea rows="3" cols="30"></textarea>
+
+                    <input class="w3-btn w3-blue subtn" type="submit" value="Submit">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+            </div>
+
+    
+    <script>  //-- Navigation bar script
+     var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+       
+    </script>
+
+
+</body>
+
+</html>
