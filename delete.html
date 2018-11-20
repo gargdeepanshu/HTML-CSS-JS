@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/delete.css" />
+    <script type="text/javascript">
+        function menu() {
+            var x = document.getElementById("fullNav");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-white">
+
+    <div class="w3-top">
+        <ul class="w3-navbar w3-medium w3-blue w3-card-2 w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+                <a href="javascript:void(0);" onclick="menu()" class="w3-white">☰</a>
+            </li>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="insert.html">Insert Student</a>
+            </li>
+           
+            <li class="w3-hide-small">
+                <a href="delete.html">Delete Student</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="search.html">Search Student</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="login.html">Login</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="about.html">About us</a>
+            </li>
+        </ul>
+
+        <div id="fullNav" class="w3-hide w3-card-2 w3-hide-large w3-hide-medium">
+
+            <ul class="w3-navbar w3-left-align w3-medium w3-white">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="insert.html">Insert Student</a>
+                </li>
+                
+                <li>
+                    <a href="delete.html">Delete Student</a>
+                </li>
+                <li>
+                    <a href="search.html">Search Student</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <br>
+
+    <br> <!-- Navigation bar ending-->
+
+    <h4><b><u>FCA Department Data</u></b></h4>
+    <p>To delete a record click on the cross button.</p>
+    <div class="w3-responsive">
+        <table class="w3-table-all w3-hoverable">
+            <tr style="background-color: #acacac">
+                <th>Name</th>
+                <th>Roll No.</th>
+                <th>Phone No.</th>
+                <th>E-mail Id</th>
+                <th>Course</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <td>Harsh Kumar</td>
+                <td>15/FCA/BCA/001</td>
+                <td>9876543210</td>
+                <td>harsh10@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+
+            <tr>
+                <td>Sumit Thakur</td>
+                <td>15/FCA/MCA/002</td>
+                <td>8965443210</td>
+                <td>sumit@gmail.com</td>
+                <td>MCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+                <td>Rahul Sharma</td>
+                <td>15/FCA/BSC/003</td>
+                <td>8789653410</td>
+                <td>rahul444@gmail.com</td>
+                <td>BSC</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Lakshay Kumar</td>
+                <td>15/FCA/BCA/005</td>
+                <td>8789652340</td>
+                <td>lakki4@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Deepak Gupta</td>
+                <td>15/FCA/BSC/006</td>
+                <td>8789432140</td>
+                <td>deepak12@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Krishna Jadon</td>
+                <td>17/FCA/MCA/007</td>
+                <td>8789433330</td>
+                <td>krishna333@gmail.com</td>
+                <td>MCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Abhishek Sharma</td>
+                <td>16/FCA/BCA/008</td>
+                <td>8723412330</td>
+                <td>abhishek23@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Kunal Kumar</td>
+                <td>17/FCA/BCA/010</td>
+                <td>8723410530</td>
+                <td>kunal105@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Sachin Sharma</td>
+                <td>17/FCA/MCA/011</td>
+                <td>8723432130</td>
+                <td>sachin.bca@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Vikas Thakur</td>
+                <td>16/FCA/BCA/012</td>
+                <td>8723431240</td>
+                <td>vikas555@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+
+            <tr>
+                <td>Vipul Kumar</td>
+                <td>17/FCA/BSC/013</td>
+                <td>8723433440</td>
+                <td>vipul124@gmail.com</td>
+                <td>BCA</td>
+                <td><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
